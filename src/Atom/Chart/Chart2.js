@@ -2,9 +2,12 @@
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 
 
+ 
+
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 export const data2 = {
+
   datasets: [
     {
       label: '# of Votes',

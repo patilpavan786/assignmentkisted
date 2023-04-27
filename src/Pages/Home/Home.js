@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useEffect,useState}from "react";
 import style from "./Home.module.css";
 import Custominput from "../../Atom/Custominput/Custominput";
 import {
@@ -19,6 +19,13 @@ import { Line } from "react-chartjs-2";
 import { Pie } from "react-chartjs-2";
 
 function Home() {
+//   const [data, setData] = useState([]);
+//  useEffect(() => {
+//     fetch('http://www.randomnumberapi.com/api/v1.0/randomredditnumber?min=10&max=10&count=3')
+//       .then(response => response.json())
+//       .then(data => setData(data))
+//       .catch(error => console.error(error));
+//   }, []);
 
   let arr = [
     { icon: <FiPieChart />, title: "Dashboard" },
@@ -79,9 +86,9 @@ function Home() {
   ];
 
   let arr4 = [
-    { txt: "Basic Tees", percent: "55%", color: "red" },
+    { txt: "Basic Tees", percent: "20%", color: "red" },
     { txt: "Custom Short Pants", percent: "31%", color: "green" },
-    { txt: "Super Hoodies", percent: "14%", color: "yellow" },
+    { txt: "Super Hoodies", percent: "48%", color: "yellow" },
   ];
 
 
